@@ -15,34 +15,34 @@ The MNIST dataset consists of 70,000 grayscale images of handwritten digits (0-9
 
 ## DESIGN STEPS:
 
-*STEP 1:*
+**STEP 1:**
 Import tensorflow and preprocessing libraries.
 
-*STEP 2:*
+**STEP 2:**
 Download and load the dataset
 
-*STEP 3:*
+**STEP 3:**
 Scale the dataset between it's min and max values
 
-*STEP 4:*
+**STEP 4:**
 Using one hot encode, encode the categorical values
 
-*STEP 5:*
+**STEP 5:**
 Split the data into train and test
 
-*STEP 6:*
+**STEP 6:**
 Build the convolutional neural network model
 
-*STEP 7:*
+**STEP 7:**
 Train the model with the training data
 
-*STEP 8:*
+**STEP 8:**
 Plot the performance plot
 
-*STEP 9:*
+**STEP 9:**
 Evaluate the model with the testing data
 
-*STEP 10:*
+**STEP 10:**
 Fit the model and predict the single input
 
 ## PROGRAM:
@@ -51,7 +51,7 @@ Fit the model and predict the single input
 
 *Register Number:* 2305003007
 
-
+```
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
@@ -155,7 +155,7 @@ img_28_gray_inverted_scaled = img_28_gray_inverted.numpy()/255.0
 x_single_prediction = np.argmax(model.predict(img_28_gray_inverted_scaled.reshape(1,28,28,1)),axis=1)
 
 print(x_single_prediction)
-
+```
 
 
 ## OUTPUT:
